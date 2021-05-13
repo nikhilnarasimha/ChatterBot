@@ -1,6 +1,8 @@
 import string
 from chatterbot import languages
-
+import spacy
+from spacy.cli.download import download
+download(model="en_core_web_sm")
 
 class LowercaseTagger(object):
     """
